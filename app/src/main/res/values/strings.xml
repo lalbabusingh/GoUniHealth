@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">GoUniHealth</string>
+    <string name="hintEmailMobile">email/mobile number</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintMobile">Mobile number</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintCreatePassword">Create Password</string>
+    <string name="labelLogin">Login</string>
+    <string name="labelNoMember">Not a member?</string>
+    <string name="labelAlready">Already a member?</string>
+    <string name="labelResister">Register</string>
+
+    <string name="labelAgree">By registration you agree to our terms &amp; condition</string>
+
+    <!--Field Validation -->
+    <string name="emptyEmail">Please enter email id</string>
+    <string name="emptyMobile">Please enter mobile number</string>
+    <string name="validEmail">Please enter valid input</string>
+    <string name="emptyPassword">Enter password</string>
+
+    <string name="emptyName">Please enter name</string>
+    <string name="emptyCity">Please enter city name</string>
+    <string name="emptyContact">Please contact number</string>
+    <string name="emptyBloodgroup">Enter blood group</string>
+    <string name="emptyEmergency1">Please enter emergency1</string>
+    <string name="emptyEmergency2">Please enter emergency2</string>
+    <string name="emptyAllergy">Please enter valid input</string>
+
+    <string name="titleEmergency">Emergency</string>
+    <string name="titleAppointment">Appointment</string>
+    <string name="titleInfo">Info</string>
+    <string name="action_settings">Settings</string>
+    <string name="labelEmergencyService">Emergency ambulance service</string>
+    <string name="labelIcu">ICU Enquiry</string>
+
+    <!--My profile -->
+    <string name="labelId">Id</string>
+    <string name="labelName">Name</string>
+    <string name="labelCity">City</string>
+    <string name="labelContact">Contacts</string>
+    <string name="labelBloodGroup">Blood G</string>
+    <string name="labelEmergency">Emergency</string>
+    <string name="labelAllergy">Allergy to any medicine</string>
+    <string name="labelCurrentIlness">Current ilness</string>
+    <string name="labelMyProfile">My Profile</string>
+    <string name="labelNext">Next</string>
+    <string name="labelSkip">Skip</string>
+
+    <string name="menuViewProfile">My Profile</string>
+    <string name="menuAppointment">My Appointments</string>
+    <string name="menuMyRecords">My Records</string>
+    <string name="menuDependent">Dependents</string>
+    <string name="menuChatHistory">Chat History</string>
+    <string name="menuLokedHospitals">Loked Hospitals</string>
+    <string name="menuInvite">Invite Friends</string>
+    <string name="menuRateUs">Rate Us</string>
+    <string name="menuAboutUs">About Us</string>
+    <string name="menuLogOut">Logout</string>
+
+    <string name="appointHospitals">Hospitals</string>
+    <string name="appointDoctors">Doctors</string>
+    <string name="appointLabs">Labs</string>
+
+    <string name="infoAmbulance">Ambulance Details</string>
+    <string name="infoBloodBank">Blood bank</string>
+    <string name="infoPharmacy">Pharmacy</string>
+
+    <string name="labelEmergency1">Emergency 1</string>
+    <string name="labelEmergency2">Emergency 2</string>
+
+    <string name="noInternet">No Internet connection</string>
+
+</resources>

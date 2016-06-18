@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuMyProfile"
+            android:icon="@mipmap/profile_icon"
+            android:title="@string/menuViewProfile" />
+        <item
+            android:id="@+id/menuAppointment"
+            android:icon="@mipmap/appoinment_icon"
+            android:title="@string/menuAppointment" />
+        <item
+            android:id="@+id/menuRecords"
+            android:checked="true"
+            android:icon="@mipmap/my_record_icon"
+            android:title="@string/menuMyRecords" />
+        <item
+            android:id="@+id/menuDependents"
+            android:icon="@mipmap/dependency_icon"
+            android:title="@string/menuDependent" />
+        <item
+            android:id="@+id/menuChat"
+            android:icon="@mipmap/chat_icon"
+            android:title="@string/menuChatHistory" />
+        <item
+            android:id="@+id/menuLockedHospital"
+            android:icon="@mipmap/locked_hospital_icon"
+            android:title="@string/menuLokedHospitals" />
+
+        <item
+            android:id="@+id/menuInvite"
+            android:icon="@mipmap/invite_icon"
+            android:title="@string/menuInvite" />
+        <item
+            android:id="@+id/menuRateUs"
+            android:icon="@mipmap/rate_us_icon"
+            android:title="@string/menuRateUs" />
+        <item
+            android:id="@+id/menuAboutUs"
+            android:icon="@mipmap/about_us_icon"
+            android:title="@string/menuAboutUs" />
+        <item
+            android:id="@+id/menuLogzout"
+            android:icon="@mipmap/logout_icon"
+            android:title="@string/menuLogOut" />
+
+
+    </group>
+
+   <!-- <item android:title="@string/app_name">
+        <menu>
+            <item
+                android:icon="@mipmap/ic_image"
+                android:title="@string/app_name" />
+
+        </menu>
+    </item>-->
+
+</menu>

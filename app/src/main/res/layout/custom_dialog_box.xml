@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/imgTakePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="80dp">
+
+        <TextView
+            android:id="@+id/txtCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@android:drawable/ic_menu_camera"
+            android:lineSpacingExtra="10dp"
+            android:text="Take Picture"
+            android:textColor="@color/Blue"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/txtGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableTop="@android:drawable/ic_menu_gallery"
+            android:lineSpacingExtra="10dp"
+            android:text="Upload from Gallery"
+            android:textColor="@color/Blue"
+            android:textSize="16sp"
+
+            />
+    </RelativeLayout>
+    <!--<Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/LimeGreen"
+        android:textColor="@color/White"
+        android:text="Take photo"/>
+    <Button
+        android:id="@+id/btnChoosePath"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/LimeGreen"
+        android:textColor="@color/White"
+        android:text="Choose from Gallery"/>
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="@color/LimeGreen"
+        android:textColor="@color/White"
+        android:text="Exit"/>
+-->
+</LinearLayout>
