@@ -10,6 +10,8 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+
+
     }
     buildTypes {
         release {
@@ -19,10 +21,11 @@ android {
     }
     sourceSets {
         main {
-            res.srcDirs = ['src/main/res', 'src/main/res/values-v21', 'src/main/res/menu']
+            res.srcDirs = ['src/main/res', 'src/main/res/values-v21', 'src/main/res/menu', 'src/main/res/drawble', 'src/main/res/drawable', 'src/main/res/drawable-hdpi', 'src/main/res/drawable-mdpi', 'src/main/res/drawable-xhdpi', 'src/main/res/drawable-xxhdpi', 'src/main/res/drawable-xxxhdpi']
             assets.srcDirs = ['src/main/assets', 'src/main/assets/fonts']
         }
     }
+
 }
 
 dependencies {
@@ -33,5 +36,7 @@ dependencies {
     compile 'com.android.support:cardview-v7:23.3.0'
     compile 'com.android.support:recyclerview-v7:23.3.0'
     compile 'de.hdodenhof:circleimageview:1.3.0'
-
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile "com.squareup.picasso:picasso:2.4.0"
 }

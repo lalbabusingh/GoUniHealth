@@ -1,0 +1,74 @@
+{
+	"startIndex": 0,
+	"pageSize": 20,
+	"sort": null,
+	"asc": true,
+	"records": [{
+		"obj": {
+			"name": "Vikram Test Hospital",
+			"address": "collegeroad, kormangala,bangalore",
+			"city": "bangalore",
+			"pinCode": "560076",
+			"description": null,
+			"hasIcu": true,
+			"hasBb": false,
+			"hasPharma": true,
+			"hasAmbulance": true,
+			"hasEmergencyServices": false,
+			"acceptsInternationalPatients": true,
+			"email": "vikram@testhosp.com",
+			"contactReception": "88888888",
+			"contactEmergency": "996354874",
+			"contactIcu": null,
+			"lat": 12.9719,
+			"lng": 77.6412,
+			"id": "db90d340-663e-4879-b8c9-a8f81c0f3d91"
+		},
+		"dist": 7.743213205561605
+	}, {
+		"obj": {
+			"name": "Vikram Test Hospital",
+			"address": "collegeroad, kormangala,bangalore",
+			"city": "bangalore",
+			"pinCode": "560076",
+			"description": null,
+			"hasIcu": true,
+			"hasBb": false,
+			"hasPharma": true,
+			"hasAmbulance": true,
+			"hasEmergencyServices": false,
+			"acceptsInternationalPatients": true,
+			"email": "vikram@testhosp.com",
+			"contactReception": "88888888",
+			"contactEmergency": "88888888",
+			"contactIcu": null,
+			"lat": 12.9766,
+			"lng": 77.5993,
+			"id": "db90d340-663e-4879-b8c9-a8f81c0f3d91"
+		},
+		"dist": 45.743213205561605
+	}, {
+		"obj": {
+			"name": "Vikram Test Hospital",
+			"address": "collegeroad, kormangala,bangalore",
+			"city": "bangalore",
+			"pinCode": "560076",
+			"description": null,
+			"hasIcu": true,
+			"hasBb": false,
+			"hasPharma": true,
+			"hasAmbulance": true,
+			"hasEmergencyServices": false,
+			"acceptsInternationalPatients": true,
+			"email": "vikram@testhosp.com",
+			"contactReception": "88888888",
+			"contactEmergency": "8892456175",
+			"contactIcu": null,
+			"lat": 12.9279,
+			"lng": 77.6271,
+			"id": "db90d340-663e-4879-b8c9-a8f81c0f3d91"
+		},
+		"dist": 15.743213205561605
+	}],
+	"totalRecordCount": 3
+}

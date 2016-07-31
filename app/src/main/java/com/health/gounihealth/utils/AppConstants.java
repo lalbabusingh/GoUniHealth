@@ -1,12 +1,21 @@
 package com.health.gounihealth.utils;
 
 /**
- * Created by LAL on 6/3/2016.
+ * Created by LAL on 7/20/2016.
  */
 public class AppConstants {
 
-    public static final String BASE_URL = "http://52.200.186.237:8080/gounihealth/api";
-    public static final String LOGIN_URL = BASE_URL+"/auth/login";
-    public static final String SIGN_UP_URL = BASE_URL+"/user/signup";
-    public static final String LOGOUT_URL = BASE_URL+"/auth/logout";
+    /** App Constants   */
+    public static final String CALLING_SCREEN ="CallingScreen";
+    public static final String SCREEN_DASHBOARD ="dashboard";
+    public static final String SCREEN_ICUENQUERY ="icuenquery";
+    public static final String SCREEN_BLOOD_BANK ="bloodbank";
+    public static final String SCREEN_PHARMACY ="pharmacy";
+
+    public static final String MENU_RECORDS ="menurecord";
+
+    public static final String DATE_INPUT_FORMAT ="yyyy-MM-dd HH:mm:ss.SSS";
+    public static final String DATE_OUTPUT_FORMAT ="yyyy-MM-dd HH:mm:ss";
+    public static final String CURRENT_DATE_FORMAT ="yyyy-MM-dd HH:mm:ss";
+
 }

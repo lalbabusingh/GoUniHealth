@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/infoVerticalBg">
+
+            <TextView
+                android:id="@+id/txtIcuType"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/Black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtTotalBeds"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TOTAL\nBeds"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtAvlBeds"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Available\nBeds"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtLastUp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="LAST\nUPDATE"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtAvgCost"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AVG\nCOST"
+            android:textColor="@color/Black"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

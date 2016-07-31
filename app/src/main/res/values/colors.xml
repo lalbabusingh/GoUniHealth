@@ -151,4 +151,10 @@
     <color name="loginButton">#41CDFE</color>
     <color name="editTextColor">#87A6BC</color>
     <color name="menuHeaderColor">#3ac1f0</color>
+    <color name="hintColor">#87A6BC</color>
+    <color name="rectangleBG">#87F6FF</color>
+    <color name="icuBg">#F8F8F8</color>
+    <color name="infoHorizontalBg">#a5dce1</color>
+    <color name="infoVerticalBg">#ebebeb</color>
+    <color name="blackTransparent">#99000000</color>
 </resources>

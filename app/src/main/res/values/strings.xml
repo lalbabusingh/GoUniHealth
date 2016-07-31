@@ -2,41 +2,70 @@
     <string name="app_name">GoUniHealth</string>
     <string name="hintEmailMobile">email/mobile number</string>
     <string name="hintEmail">Email</string>
-    <string name="hintMobile">Mobile number</string>
+    <string name="hintMobile">Mobile number*</string>
     <string name="hintPassword">Password</string>
-    <string name="hintCreatePassword">Create Password</string>
+    <string name="hintCreatePassword">Create Password*</string>
+    <string name="hintConfirmPassword">Confirm Password*</string>
     <string name="labelLogin">Login</string>
     <string name="labelNoMember">Not a member?</string>
     <string name="labelAlready">Already a member?</string>
     <string name="labelResister">Register</string>
+    <string name="labelSearch">Search</string>
+    <string name="labelMoreInfo">More Info</string>
 
-    <string name="labelAgree">By registration you agree to our terms &amp; condition</string>
+    <string name="labelEnquiry">ICU Enquiry</string>
+    <string name="labelIcuList">ICU List</string>
+    <string name="labelIcuInfo">ICU Info</string>
+    <string name="labelHospitalList">Hospital List</string>
+    <string name="labelBloodBanksList">Blood Banks</string>
+    <string name="labelPharmacyList">Pharmacy</string>
+
+    <string name="labelBloodBanksSearch">Blood Banks search</string>
+    <string name="labelPharmacySearh">Pharmacy search</string>
+
+    <string name="labelAgree">By registration you agree to our\nterms &amp; condition</string>
+    <string name="headerPhoneVerify">Verify your phone number </string>
+    <string name="headerMedicalRecord">Medical Record</string>
+
+    <string name="labelUpdate">Update</string>
+    <string name="labelMyProfileEdit">My Profile Edit</string>
 
     <!--Field Validation -->
     <string name="emptyEmail">Please enter email id</string>
     <string name="emptyMobile">Please enter mobile number</string>
-    <string name="validEmail">Please enter valid input</string>
-    <string name="emptyPassword">Enter password</string>
-
-    <string name="emptyName">Please enter name</string>
+    <string name="validMobile">Please enter valid mobile number</string>
+    <string name="validEmail">Please enter valid email id</string>
+    <string name="emptyPassword">Please enter password</string>
+    <string name="validationPassword">Please enter minimum 6 characters</string>
+    <string name="validateConfirmPassword">Password is not match. Please try again.</string>
+    <string name="emptyFirstName">Please first enter name</string>
+    <string name="emptyLastName">Please last enter name</string>
     <string name="emptyCity">Please enter city name</string>
     <string name="emptyContact">Please contact number</string>
     <string name="emptyBloodgroup">Enter blood group</string>
     <string name="emptyEmergency1">Please enter emergency1</string>
     <string name="emptyEmergency2">Please enter emergency2</string>
     <string name="emptyAllergy">Please enter valid input</string>
+    <string name="emptyLocation">Please enter location</string>
+    <string name="emptyOtherBloodG">Please enter other blood group </string>
+
+    <string name="emptySearchKey">Please enter search key</string>
+    <string name="searchKeyHint">Search(Hospital,BloodBank,Ambulance,Pharmacy)</string>
 
     <string name="titleEmergency">Emergency</string>
-    <string name="titleAppointment">Appointment</string>
+    <string name="titleAppointment">Medical Service</string>
     <string name="titleInfo">Info</string>
     <string name="action_settings">Settings</string>
     <string name="labelEmergencyService">Emergency ambulance service</string>
     <string name="labelIcu">ICU Enquiry</string>
+    <string name="labelEmergencyCare">Emergency Care</string>
 
     <!--My profile -->
     <string name="labelId">Id</string>
-    <string name="labelName">Name</string>
-    <string name="labelCity">City</string>
+    <string name="labelFirstName">First Name*</string>
+    <string name="labelLastName">Last Name*</string>
+    <string name="labelAddress">Address</string>
+    <string name="labelCity">City*</string>
     <string name="labelContact">Contacts</string>
     <string name="labelBloodGroup">Blood G</string>
     <string name="labelEmergency">Emergency</string>
@@ -45,6 +74,7 @@
     <string name="labelMyProfile">My Profile</string>
     <string name="labelNext">Next</string>
     <string name="labelSkip">Skip</string>
+    <string name="labelHintICU">Select type of ICU/Ventilator</string>
 
     <string name="menuViewProfile">My Profile</string>
     <string name="menuAppointment">My Appointments</string>
@@ -65,9 +95,45 @@
     <string name="infoBloodBank">Blood bank</string>
     <string name="infoPharmacy">Pharmacy</string>
 
-    <string name="labelEmergency1">Emergency 1</string>
-    <string name="labelEmergency2">Emergency 2</string>
+    <string name="labelEmergency1">Emergency 1*</string>
+    <string name="labelEmergency2">Emergency 2*</string>
 
+    <!-- Error Handling-->
+    <string name="mesgNoData">Not available for your location</string>
     <string name="noInternet">No Internet connection</string>
+    <string name="genericError">Something wrong please try again...</string>
+
+
+    <string name="mesgEmergency">In Case of Emergency\nAre you willing to Donate Blood ? </string>
+    <string name="mesgAllergy">Allergy to any medicine </string>
+    <string name="mesgCurrentIllness">Current illness </string>
+    <string name="mesgPastMed">Past Medical/Sergical History</string>
+    <string name="labelSave">Save</string>
+    <string name="labelEditProfile">Edit Profile</string>
+    <string name="mesgMoreInfoDes1">GoUnihealth does not offer any solution of\navailability of ICU facilities.</string>
+    <string name="mesgMoreInfoDes2">If you are looking for ventilator please check\nthe availability of beds as well</string>
+
+    <string name="labelInsurance">Insurance</string>
+    <string name="labelMedicalRecord">Medical Record</string>
+    <string name="mesgAlertHospital">Please wait while we are trying to contact your nearest Hospitals.. </string>
+    <string name="mesgOtp">Please Enter the OTP sent to your registered mobile number. </string>
+
+    <!-- Alert Toast message-->
+    <string name="alertTitle">Something wrong </string>
+    <string name="alertMessage">Please login again </string>
+    <string name="imageUploadSuccess">Upload successfully</string>
+    <string name="imageUploadFailure">Upload failure. Please try again</string>
+
+
+    <string-array name="bloodGroup">
+        <item>A+</item>
+        <item>O+</item>
+        <item>B+e</item>
+        <item>AB+</item>
+        <item>A-</item>
+        <item>O-</item>
+        <item>B-</item>
+        <item>AB-</item>
+    </string-array>
 
 </resources>

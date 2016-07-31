@@ -50,12 +50,11 @@
 
                     <EditText
                         android:id="@+id/edtEmailId"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/editText"
                         android:inputType="textEmailAddress"
                         android:imeOptions="actionNext"
                         android:hint="@string/hintEmail"
-                        android:textColor="@color/Black" />
+                         />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -68,12 +67,11 @@
 
                     <EditText
                         android:id="@+id/edtPassword"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        style="@style/editText"
                         android:hint="@string/hintPassword"
                         android:imeOptions="actionGo"
                         android:inputType="textPassword"
-                        android:textColor="@color/Black" />
+                        />
 
                 </android.support.design.widget.TextInputLayout>
 
@@ -82,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:background="@mipmap/login_btn"
+                    android:background="@drawable/registration_button_selector"
                     android:onClick="onLoginClick"
                     android:text="@string/labelLogin"
                     android:textColor="@color/White"
@@ -103,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:background="@mipmap/login_btn"
+                    android:background="@drawable/registration_button_selector"
                     android:onClick="onRegisterClick"
                     android:text="@string/labelResister"
                     android:textColor="@color/White"

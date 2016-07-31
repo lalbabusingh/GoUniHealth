@@ -1,0 +1,354 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgProfileBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/profile_bg"
+                    android:paddingTop="80dp"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/image_container_menu"
+                    android:src="@drawable/profile_dp"
+                    app:border_color="@color/White"
+                    app:border_width="1dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/imgUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/edit_img_button" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/imgEditProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit_button" />
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:textColorHint="@color/editTextColor">
+
+                    <EditText
+                        android:id="@+id/edtFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/city_icon"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/labelFirstName"
+                        android:imeOptions="actionNext"
+                        android:enabled="false"
+                        android:textColor="@color/Black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/editTextColor">
+
+                    <EditText
+                        android:id="@+id/edtLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/city_icon"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/labelLastName"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/Black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/editTextColor">
+
+                    <EditText
+                        android:id="@+id/edtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/city_icon"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/labelAddress"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/Black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inputLayoutCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/editTextColor">
+
+                    <ImageView
+                        android:id="@+id/imgCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="20dp"
+                        android:src="@drawable/city_icon" />
+                    <!--<EditText
+                    android:id="@+id/edtSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     />-->
+                    <Spinner
+                        android:id="@+id/spinnerCity"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="20dp"
+                        android:spinnerMode="dialog"
+                        android:text="@string/labelHintICU"
+                        android:textColor="@color/Black" />
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutEmerg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/editTextColor">
+
+                    <EditText
+                        android:id="@+id/edtEmerg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/call_icon"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/labelEmergency1"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:textColor="@color/Black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutEmerg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/editTextColor">
+
+                    <EditText
+                        android:id="@+id/edtEmerg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/call_icon"
+                        android:drawablePadding="10dp"
+                        android:hint="@string/labelEmergency2"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:textColor="@color/Black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inputLayoutBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/editTextColor">
+
+                    <ImageView
+                        android:id="@+id/imgBloodG"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="20dp"
+                        android:src="@drawable/bloodgroup_icon" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerBloodGroup"
+                        style="@style/Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="20dp"
+                        android:spinnerMode="dialog"
+                        android:text="@string/labelHintICU"
+                        android:textColor="@color/Black" />
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputLayoutOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/editTextColor">
+
+                    <EditText
+                        android:id="@+id/edtOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:hint="Other blood group"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/Black" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/mesgEmergency"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/radGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="60dp"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/custom_radio_button"
+                        android:gravity="center"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/radNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/custom_radio_button"
+                        android:gravity="center"
+                        android:text="No" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/edtAllergy"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_rectangle"
+                    android:gravity="center"
+                    android:hint="@string/mesgAllergy" />
+
+                <EditText
+                    android:id="@+id/edtCurrentIllness"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_rectangle"
+                    android:gravity="center"
+                    android:hint="@string/mesgCurrentIllness" />
+
+                <EditText
+                    android:id="@+id/edtPasMed"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_rectangle"
+                    android:gravity="center"
+                    android:hint="@string/mesgPastMed"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbars="horizontal" />
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_btn"
+                    android:text="@string/labelUpdate"
+                    android:textColor="@color/White"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,88 +1,124 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/emg_bg"
+    android:background="@drawable/emg_bg"
     android:orientation="vertical">
 
 
     <LinearLayout
-        android:id="@+id/layoutTop"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:background="@mipmap/searchbar"
-            android:gravity="center" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/hospitalLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="100dp"
-        android:background="@mipmap/appointment_btn"
-        android:gravity="center|left"
-        android:orientation="vertical">
-
-        <com.health.gounihealth.customfont.LatoBlackTextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutAmbulance"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:text="@string/appointHospitals"
-            android:textColor="@color/White"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/ambulance_icon" />
 
-    <LinearLayout
-        android:id="@+id/doctorLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="30dp"
-        android:background="@mipmap/appointment_btn"
-        android:gravity="center|left"
-        android:orientation="vertical">
+            <com.health.gounihealth.customfont.LatoHeavyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ambulance details"
+                android:textSize="18sp" />
+        </LinearLayout>
 
-        <com.health.gounihealth.customfont.LatoBlackTextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutBloodBanks"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:text="@string/appointDoctors"
-            android:textColor="@color/White"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgBloodBanks"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/blood_bank_icon" />
+
+            <com.health.gounihealth.customfont.LatoHeavyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Bank"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/labLayout"
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="30dp"
-        android:background="@mipmap/appointment_btn"
-        android:gravity="center|left"
-        android:orientation="vertical">
+        android:src="@drawable/emg_seprator" />
 
-        <com.health.gounihealth.customfont.LatoBlackTextView
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layoutEmergencyCare"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:text="@string/appointLabs"
-            android:textColor="@color/White"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgPharmacy"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/pharmacy_icon" />
+
+            <com.health.gounihealth.customfont.LatoHeavyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="24 Hours\nPharmacy"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutIcuEnguiry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/blood_bank_icon" />
+
+            <com.health.gounihealth.customfont.LatoHeavyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hospital Lis\nBook Appointment"
+                android:textSize="18sp" />
+        </LinearLayout>
 
     </LinearLayout>
 

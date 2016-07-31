@@ -1,14 +1,18 @@
 package com.health.gounihealth.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.health.gounihealth.R;
-import com.health.gounihealth.utils.CommonMethods;
+import com.health.gounihealth.activity.ICUEnquiry;
+import com.health.gounihealth.utils.ApiManager;
+import com.health.gounihealth.utils.AppConstants;
 
 /**
  * Created by LAL on 6/11/2016.
@@ -20,6 +24,8 @@ public class AppointmentFragment extends Fragment implements View.OnClickListene
     }
 
     private LinearLayout hospitalLayout,doctorLayout,labLayout;
+    private ImageView imgBloodBanks;
+    private ImageView imgPharmacy;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,27 +43,34 @@ public class AppointmentFragment extends Fragment implements View.OnClickListene
     }
 
     private void initialization(View view){
-        hospitalLayout = (LinearLayout)view.findViewById(R.id.hospitalLayout);
-        hospitalLayout.setOnClickListener(this);
-        doctorLayout = (LinearLayout)view.findViewById(R.id.doctorLayout);
-        doctorLayout.setOnClickListener(this);
-        labLayout = (LinearLayout)view.findViewById(R.id.labLayout);
-        labLayout.setOnClickListener(this);
+        imgBloodBanks = (ImageView)view.findViewById(R.id.imgBloodBanks);
+        imgBloodBanks.setOnClickListener(this);
+        imgPharmacy = (ImageView)view.findViewById(R.id.imgPharmacy);
+        imgPharmacy.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.hospitalLayout:
-                CommonMethods.showToastMessage(getContext(),"Comming soon...");
+
+        switch (v.getId()) {
+            case R.id.imgBloodBanks:
+                startBloodBankActivity();
                 break;
-            case R.id.doctorLayout:
-                CommonMethods.showToastMessage(getContext(),"Comming soon...");
-                break;
-            case R.id.labLayout:
-                CommonMethods.showToastMessage(getContext(),"Comming soon...");
+            case R.id.imgPharmacy:
+                Intent intent = new Intent(getActivity(),ICUEnquiry.class);
+                intent.putExtra(AppConstants.CALLING_SCREEN, AppConstants.SCREEN_PHARMACY);
+                startActivity(intent);
                 break;
         }
-
     }
+
+    private void startBloodBankActivity(){
+      /*  Intent intent = new Intent(getActivity(),BloodBanksActivity.class);
+        startActivity(intent);*/
+        Intent intent = new Intent(getActivity(),ICUEnquiry.class);
+        intent.putExtra(AppConstants.CALLING_SCREEN, AppConstants.SCREEN_BLOOD_BANK);
+        startActivity(intent);
+    }
+
 }

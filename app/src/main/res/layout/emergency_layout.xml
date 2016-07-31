@@ -1,8 +1,7 @@
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/emg_bg">
+    android:background="@drawable/emg_bg">
 
 
     <LinearLayout
@@ -10,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:gravity="right">
+        android:gravity="right"
+        android:visibility="gone">
 
         <Spinner
             android:id="@+id/citySpinner"
@@ -18,50 +18,102 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:layout_marginTop="20dp"
-            android:background="@mipmap/city_button"
+            android:background="@drawable/city_button"
             android:gravity="center" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layoutMiddle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@+id/layoutBottom"
         android:layout_below="@+id/layoutTop"
         android:gravity="center"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:background="@mipmap/emergency_ambulance_service_icon" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <com.health.gounihealth.customfont.LatoBlackTextView
+            <ImageView
+                android:id="@+id/imgEmgAmbulance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/emergency_ambulance_service_icon" />
+
+            <com.health.gounihealth.customfont.LatoBlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/labelEmergencyService"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="@string/labelEmergencyService"
-            android:textSize="20sp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:src="@mipmap/emg_seprator" />
+            android:src="@drawable/emg_seprator" />
 
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="5dp"
-            android:background="@mipmap/icu_enquiry_icon" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="1">
 
-        <com.health.gounihealth.customfont.LatoHeavyTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/labelIcu"
-            android:textSize="18sp" />
+            <LinearLayout
+                android:id="@+id/layoutEmergencyCare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/icu_enquiry_icon" />
+
+                <com.health.gounihealth.customfont.LatoHeavyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/labelEmergencyCare"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutIcuEnguiry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/icu_enquiry_icon" />
+
+                <com.health.gounihealth.customfont.LatoHeavyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/labelIcu"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -71,13 +123,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="10dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/searchbar" />
+            android:background="@drawable/searchbar" />
     </LinearLayout>
 
 </RelativeLayout>

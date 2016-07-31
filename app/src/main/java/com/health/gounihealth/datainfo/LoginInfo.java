@@ -23,6 +23,14 @@ public class LoginInfo {
     private String emergencyId;
     private String emergencyContactNo;
     private String profileImageId;
+    private String otpId;
+    public String getOtpId() {
+        return otpId;
+    }
+
+    public void setOtpId(String otpId) {
+        this.otpId = otpId;
+    }
 
     public String getTokenValue() {
         return tokenValue;

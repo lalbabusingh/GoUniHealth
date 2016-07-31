@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/emg_bg">
+    android:background="@drawable/emg_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@mipmap/ambulance_icon" />
+                    android:background="@drawable/ambulance_icon" />
 
                 <com.health.gounihealth.customfont.LatoBlackTextView
                     android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@mipmap/blood_bank_icon" />
+                    android:background="@drawable/blood_bank_icon" />
 
                 <com.health.gounihealth.customfont.LatoBlackTextView
                     android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:src="@mipmap/emg_seprator" />
+            android:src="@drawable/emg_seprator" />
 
         <LinearLayout
             android:id="@+id/layoutBellow"
@@ -83,7 +83,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="5dp"
-                android:background="@mipmap/pharmacy_icon" />
+                android:background="@drawable/pharmacy_icon" />
 
             <com.health.gounihealth.customfont.LatoHeavyTextView
                 android:layout_width="wrap_content"
@@ -105,7 +105,7 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@mipmap/searchbar" />
+            android:background="@drawable/searchbar" />
     </LinearLayout>
 
 </RelativeLayout>

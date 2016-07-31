@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@mipmap/menu_header_bg"
+    android:background="@drawable/menu_header_bg"
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
@@ -15,13 +15,13 @@
         android:layout_height="120dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:background="@mipmap/image_container_menu"
-        android:src="@mipmap/person"
+        android:background="@drawable/image_container_menu"
+        android:src="@drawable/profile_dp"
         app:border_color="@color/White"
         app:border_width="1dp" />
 
     <TextView
-        android:id="@+id/txtName"
+        android:id="@+id/txtProfileName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
